@@ -10,12 +10,12 @@ const app = express();
 const PORT: number = Number(process.env.PORT) || 3000;  // Explicitly a number
 
 // 3. Use cors middleware before your routes
-// app.use(cors());   // easy method 
-app.use(cors({   // strict method
-    origin: 'http://localhost:5173',  // frontend URL
-    methods: ['GET', 'POST'],    // Allowed actions
-    credentials: true,
-}));
+app.use(cors());   // easy method 
+// app.use(cors({   // strict method
+//     origin: 'http://localhost:5173',  // frontend URL
+//     methods: ['GET', 'POST'],    // Allowed actions
+//     credentials: true,
+// }));
 
 app.get('/contact', rateLimiter, (req: Request, res: Response) => {
     console.log("contact route successful");
