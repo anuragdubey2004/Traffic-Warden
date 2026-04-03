@@ -5,24 +5,20 @@
   "type": "module",
   "main": "server.ts",
   "scripts": {
-  "build": "tsc",
-  "start": "node dist/server.js",
-  "dev": "tsx watch server.ts"
-},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+    "start": "npx tsx server.ts",
+    "dev": "npx tsx watch server.ts"
+  },
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.0",
     "express": "^5.2.1",
-    "nodemon": "^3.1.14",
-    "redis": "^5.11.0"
+    "redis": "^5.11.0",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
-    "@types/node": "^25.5.2",
-    "tsx": "^4.21.0"
+    "@types/node": "^22.0.0",
+    "nodemon": "^3.1.14"
   }
 }
